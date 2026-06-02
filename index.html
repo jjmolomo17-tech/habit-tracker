@@ -5,9 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Habit Tracker</title>
   <meta name="theme-color" content="#764ba2">
+   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <link rel="manifest" href="manifest.json">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
@@ -958,8 +961,8 @@
         
         new Notification("🌱 Habit Tracker Reminder", {
           body: `Don't forget to: ${habitNames || 'complete your habits'} today!`,
-          icon: <img src= "images/icon-512.png">
-                <img src= "images/icon-192.png">
+        //   icon: <img src= "images/icon-512.png" />
+                // <img src= "images/icon-192.png" />
                  //  icon URL here
         });
       } else if (Notification.permission !== "denied") {
