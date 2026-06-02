@@ -576,7 +576,7 @@
 
   <!-- Footer -->
   <footer class="app-footer">
-    <p>Crafted with <span class="footer-heart">❤️</span> by ShashankGowda NB</p>
+    <p>Crafted with <span class="footer-heart">❤️</span> by Joy Molomos</p>
   </footer>
 
   <script>
@@ -958,7 +958,9 @@
         
         new Notification("🌱 Habit Tracker Reminder", {
           body: `Don't forget to: ${habitNames || 'complete your habits'} today!`,
-          icon: 'https://example.com/icon.png' // You can add an icon URL here
+          icon: <img src= "images/icon-512.png">
+                <img src= "images/icon-192.png">
+                 //  icon URL here
         });
       } else if (Notification.permission !== "denied") {
         Notification.requestPermission().then(permission => {
